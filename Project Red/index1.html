@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="#">home</a>
+        <a href="#">become a donor</a>
+        <img class="logo" src="images/logo1.png" width="100" height="100">
+        <a href="#">explore blood banks</a>
+        <a href="#">FAQ</a>
+    </nav>
+
+
+
+
+    <div class="centered">
+        <h2 class="title-heading">Locate Nearest Blood Bank</h2>
+        <div class="city">City:
+            <select id="source" name="source">
+                <option>---CITY---</option>
+                <option>Agartala</option>
+                <option>Agra</option>
+                <option>Bangalore</option>
+                <option>Bhopal</option>
+                <option>Chandigarh</option>
+                <option>Chennai</option>
+                <option>Delhi</option>
+                <option>Delhi</option>
+                <option>Faridabad</option>
+                <option>Gandhinagar</option>
+                <option>gangtok</option>
+                <option>Hyderabad</option>
+                <option>Imphal</option>
+                <option>Itanagar</option>
+                <option>jaipur</option>
+                <option>Jadhpur</option>
+                <option>Kanpur</option>
+                <option>Kolkata</option>
+                <option>Lakshadweep</option>
+                <option>Ludhina</option>
+                <option>Madurai</option>
+                <option>Nahsik</option>
+                <option>Patna</option>
+                <option>Pune</option>
+                <option>Raipur</option>
+                <option>Surat</option>
+                <option>tezpur</option>
+                <option>Udaipur</option>
+                <option>Varanasi</option>
+                <option>Visakhapatnam</option>
+            </select>
+            &emsp;
+
+            Area:
+
+            <select id="status" name="status">
+                <option class="street3">---LOCALITY---</option>
+                <option class="street3">MVP</option>
+                <option class="street5">Shivaji Nagar</option>
+                <option class="street1">Lalitha Colony</option>
+                <option class="street3 street4">Ram Nagar</option>
+                <option class="street2">Arpora Market</option>
+                <option class="street5">Sorojini Market</option>
+                <option class="street3">FC Road</option>
+                <option class="street1 street4">Commercial Street</option>
+                <option class="street5">Baapu Bazaar</option>
+                <option class="street2">Mall Road</option>
+                <option class="street3">Housing Road</option>
+                <option class="street1 street4">Hill-Top Road</option>
+                <option class="street5">Government Street</option>
+                <option class="street2">Connaught Place</option>
+                <option class="street3">British Raj colony</option>
+                <option class="street1">Heritage Street</option>
+                <option class="street5">Structure City</option>
+                <option class="street2">CP Street</option>
+                <option class="street3">Gandhi nagar</option>
+                <option class="street5">NTR Street</option>
+                <option class="street1 street4">Necklace Road</option>
+                <option class="street3">Bowenpally OLD</option>
+                <option class="street2">Bowenpally NEW</option>
+                <option class="street5">Sri Nagar Colony</option>
+                <option class="street1">Beverly Hills</option>
+                <option class="street5">Maruti Road</option>
+                <option class="street2">Maruti Road</option>
+                <option class="street1 street4">Heart Road</option>
+                <option class="street5">Oart Street</option>
+                <option class="street3">Food Street</option>
+                <option class="street2">Colonial colony</option>
+                <option class="street1 street4">Park Street</option>
+                <option class="street2 street4">Coraba</option>
+                <option class="street3">Pytorch</option>
+                <option class="street1 street4">Harrods Road</option>
+                <option class="street2">Beverly Hills</option>
+                <option class="street1 street4">Leopard Cafe</option>
+                <option class="street5">Vivek nagar</option>
+            </select>
+            <br>
+            <div class="button-container">
+                <a href="#" id="button">
+                    Submit
+                </a></div>
+            <br>
+            <p id="address">Address:</p>
+        </div>
+        <br>
+        <br>
+        <h2 class="title-heading1">Register To Donate</h2>
+        <br>
+        <p align="center">Please fill the following information to register as voluntary blood donor and become part of a greater good. Kindly update your date of donation once done, so that your name will be hidden automatically till next 3 Months. Also please update your profile/information if in case you relocate in future.</p>
+        <table align="center" cellpadding='0' cellspacing='0' border='0'>
+            <form name="myform" onsubmit="return validation()" method="post">
+                <br>
+                <tr>
+                    <td>
+                        <strong>Full Name</strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <input name="txtDonorName" type="text" maxlength="100" id="txtDonorName" class="textarea" placeholder="Enter name" required minlength="6" maxlength="6" title="Enter only charecters" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Blood Group</strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <select name="dpBloodGroup" id="dpBloodGroup">
+                            <option value="Select">select</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Age</strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <input name="txtAge" type="text" maxlength="3" id="txtAge" class="textarea" placeholder="Enter age" pattern="(1[8-9]|[2-5][0-9]|6[0-5])" title="Please enter a valid number between 18 and 65." />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Weight</strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <input name="txtAge" type="text" maxlength="3" id="txtAge" class="textarea" placeholder="Enter age" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Mobile Number&emsp;<br />
+                        </strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <input name="txtMobileNumber" type="text" maxlength="10" id="txtMobileNumber" class="textarea" placeholder="enter phone number" pattern="^[6-9]\d{9}$"/ title="Please enter a valid phone number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>E-mail adress</strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <input name="txtDonorEmail" type="email" maxlength="100" id="txtDonorName" class="textarea" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter a Valid Email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Location</strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <input name="txtLocation" type="text" maxlength="100" id="txtLocation" class="textarea" placeholder="Enter location" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Date</strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <input name="txtDate" type="text" id="txtDate" class="textarea" placeholder="dd/mm/yyyy" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]|(?:Jan|Mar|May|Jul|Aug|Oct|Dec)))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2]|(?:Jan|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)(?:0?2|(?:Feb))\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9]|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep))|(?:1[0-2]|(?:Oct|Nov|Dec)))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$" title="Enter a Valid Date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>HIV/AIDS</strong>
+                    </td>
+                    <td height="30">
+
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="Yes"> Yes
+                        <input type="radio" name="gender" value="No"> No
+                        <!--                        <input type="radio" name="gender" value="other"> Other-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="hdnPostYourBloodRequestID" type="hidden" id="hdnPostYourBloodRequestID" />
+                    </td>
+                    <td height="30">
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" height="30">
+                        <div align="center">
+                            <input type="submit" name="btnSubmit" value="Submit" id="button" />
+                            <div class="button-container">
+                                <a href="#" id="button">
+                                    Submit
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </form>
+        </table>
+
+    </div>
+
+    <footer class="footer-basic-centered">
+
+        <p class="footer-company-motto">Share a little, care a little – Donate Blood.</p>
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Become a donor</a>
+            ·
+            <a href="#">Explore blood banks</a>
+            ·
+            <a href="#">About</a>
+            ·
+            <a href="#">Faq</a>
+        </p>
+
+        <p class="footer-company-name">Blood donation &copy; 2019</p>
+
+    </footer>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#source").change(function() {
+
+                var element = $(this);
+
+                if (element.val() === "Visakhapatnam") {
+                    $(".street1").css("display", "none");
+                    $("street3").css("display", "none");
+
+                } else if (element.val() === "Raipur") {
+                    $(".street2").css("display", "none");
+                } else if (element.val() === "Delhi") {
+                    $("street3").css("display", "none");
+                } else if (element.val() === "Pune") {
+                    $("street4").css("display", "none");
+                } else if (element.val() === "Chennai") {
+                    $("street5").css("display", "none");
+                } else {
+                    $("street1").css("display", "none");
+                    $("street5").css("display", "none");
+                }
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
